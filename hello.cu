@@ -9,4 +9,5 @@ __global__ void gpu_kernel()
 int main()
 {
     gpu_kernel<<<4, 16>>>();
+    cudaDeviceSynchronize();
 }
